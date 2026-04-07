@@ -28,8 +28,7 @@ A clean, dark-themed To-Do application built with vanilla HTML, CSS, and JavaScr
 No installation needed. Just clone the repo and open `todo.html` in your browser.
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+https://github.com/imsamradhi18/to-do-app
 ```
 
 Then open `todo.html` directly in any browser, or use a local server like VS Code Live Server.
