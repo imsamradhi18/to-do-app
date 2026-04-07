@@ -23,15 +23,8 @@ A clean, dark-themed To-Do application built with vanilla HTML, CSS, and JavaScr
 └── todo.js        # App logic and interactivity
 ```
 
-## How to Run
-
-No installation needed. Just clone the repo and open `todo.html` in your browser.
-
-```bash
-https://github.com/imsamradhi18/to-do-app
-```
-
-Then open `todo.html` directly in any browser, or use a local server like VS Code Live Server.
+## Live Demo
+ https://imsamradhi18.github.io/to-do-app/
 
 ## Tech Stack
 
