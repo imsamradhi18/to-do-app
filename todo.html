@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="todo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+    <title>To-Do App</title>
+  </head>
+  <body>
+    <h1 id="main-heading">To-Do App</h1>
+    <div class="page-wrapper">
+
+      <div class="grid-container">
+        <input id="todo-input" type="text" placeholder="Enter a new task." />
+        <input id="todo-date" type="date" />
+        <button class="btn-todo" onclick="addTodo()">ADD</button>
+      </div>
+
+      <p id="error-msg"></p>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="setFilter('all', this)">All</button>
+        <button class="filter-btn" onclick="setFilter('pending', this)">Pending</button>
+        <button class="filter-btn" onclick="setFilter('done', this)">Done</button>
+        <div class="sort-wrapper">
+          <label for="sort-select">Sort by:</label>
+          <select id="sort-select" onchange="displayItems()">
+            <option value="none">Default</option>
+            <option value="date-asc">Date ↑</option>
+            <option value="date-desc">Date ↓</option>
+            <option value="name">Name A–Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="todo-container"></div>
+      <p id="todo-items"></p>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
